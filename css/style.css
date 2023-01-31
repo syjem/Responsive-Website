@@ -1,0 +1,142 @@
+:root {
+    --color1: rgb(158, 154, 154);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+h5 {
+    padding-bottom: 20px;
+}
+
+p {
+    padding: 20px 0;  
+    line-height: 1.5em;
+}
+
+.hide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: yellow;
+    color: black;
+}
+
+.header {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(72, 223, 185);
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    color: white;
+    background-color: rgb(49, 49, 49);
+}
+
+
+ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+ul li {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding: 15px;
+    align-items: center;
+}
+
+ul li:hover {
+    background-color: rgb(224, 221, 221);
+    color: black;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    gap: 40px;
+}
+
+.side {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 30%;
+}
+
+.square {
+    background-color: var(--color1);
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+}
+
+.rect {
+    background-color: var(--color1);
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.main-content {
+    display: flex;
+    flex: 70%;
+    flex-direction: column;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(216, 209, 209);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+    .nav ul, main {
+        flex-direction: column;
+    }
+
+    .header {
+        text-align: center;
+    }
+
+    h2, h5 {
+        text-align: center;
+    }
+
+    .hide {
+        display: none;
+    }
+}
